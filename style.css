@@ -1,0 +1,241 @@
+/* Resetando estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+h1{
+    margin: 0;
+}
+
+h2, h3{
+    margin: 0 0 6px 0;
+}
+
+/* Fonte e cores principais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Container centralizado */
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+img {
+    width: 100px;
+    height: 50px;
+}
+
+.site {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #f776c5;
+    padding: 15px 0;
+    width: 100%;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    gap: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+/* Estilo do banner */
+.banner {
+    background: rgb(255, 182, 227);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.banner .cta-button {
+    padding: 10px 20px;
+    background-color: #f386e1;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+/* Estilo dos serviços */
+.services {
+    padding: 15px 0;
+    background-color: #f776c5;
+    text-align: center;
+    width: 100%;
+}
+
+.services .service-item {
+    margin-bottom: 20px;
+}
+
+.services h2 {
+    font-size: 28px;
+}
+
+.services h3 {
+    font-size: 22px;
+}
+
+/* Estilo sobre a empresa */
+.about {
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(255, 182, 227);
+    width: 100%;
+}
+
+/* Estilo do formulário de contato */
+.contact {
+    padding: 15px 0;
+    background-color: #f776c5;
+    text-align: center;
+    width: 100%;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fa5cc5;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 12px;
+    background-color: #da9eec;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: rgb(233, 85, 196);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+
+    .services h2,
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .services h3 {
+        font-size: 20px;
+    }
+
+    .banner {
+        padding: 20px 0;
+    }
+
+    .banner .cta-button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services h2 {
+        font-size: 20px;
+    }
+
+    .about h2 {
+        font-size: 22px;
+    }
+
+    .contact button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+}
+
